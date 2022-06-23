@@ -104,7 +104,7 @@ export default function MiniDrawer({ setHeaderTitle }) {
         <Box>
             <Drawer className="drawer" variant="permanent" open={open}>
                 <DrawerHeader className="leftbar_header" >
-                    {open && <Link onClick={() => setHeaderTitle("Trang quản lý")} to="/trang-chu"><img className='logo_image' src="./images/logo.PNG" alt="" /></Link>}
+                    {open && <Link onClick={() => setHeaderTitle("Trang quản lý")} to="/trang-chu"><img className='logo_image' src="./images/logo-project2.png" alt="" /></Link>}
                     {open ?
                         <MoreVertIcon className="button_close" onClick={handleDrawerClose}>
                         </MoreVertIcon>

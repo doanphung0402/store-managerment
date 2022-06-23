@@ -6,8 +6,7 @@ import { CircularProgress } from "@material-ui/core";
 import axios from 'axios';
 import { Alert, Snackbar } from '@mui/material';
 
-
-export default function Register() {
+export default function  Register() {
     const [stateAlert, setStateAlert] = useState({ severity: "", variant: "", open: false, content: "" });
 
 
