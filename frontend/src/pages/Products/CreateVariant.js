@@ -202,7 +202,7 @@ function CreateVariant({ productId, triggerReload, setViewState, setStateAlert }
           id="tableTitle"
           px={1}
         >
-          Giá sản phẩm
+          Gía sản Phẩm
         </Typography>
         <Divider sx={{ my: 1 }} />
         <Box

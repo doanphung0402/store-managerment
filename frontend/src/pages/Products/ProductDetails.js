@@ -50,7 +50,6 @@ function ProductDetails({ setStateAlert }) {
       const productData = await ProductAPI.product(params.id);
       setProduct(productData.data);
       const variantsData = await ProductAPI.variantList(params.id);
-      console.log("🚀 ~ file: ProductDetails.js ~ line 52 ~ getData ~ variantsData", variantsData)
       // if(productData.data.recordStatus !== "Đang hoạt động") history.push(`/san-pham`);
       // redirect to /products when all variants are already deleted
       if (variantsData.data.length < 1) history.push(`/san-pham`);
@@ -160,6 +159,7 @@ function ProductDetails({ setStateAlert }) {
         {/* <ProductDetailsInfo product={product} variantNumber={variants.length}/> */}
         <Box display="flex">
           <Box
+          sx={{ width: "40%" }}
             className="images-demo"
             display="flex"
             justifyContent="center"
@@ -201,7 +201,14 @@ function ProductDetails({ setStateAlert }) {
               </Swiper>
             }
           </Box>
-          <Box className="info-demo" px={2} py={2}>
+          <Box className="info-demo"
+            px={2}
+            py={2}
+            sx={{
+              display: "flex",
+              width: "60%"
+            }}
+          >
             <Box
               width="25%"
               display="flex"
