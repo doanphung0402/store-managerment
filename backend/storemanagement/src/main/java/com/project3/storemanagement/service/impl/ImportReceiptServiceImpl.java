@@ -103,7 +103,7 @@ public class ImportReceiptServiceImpl implements ImportReceiptService {
             /*
               Step 2: Check total already imported quantity for this order.
               If total imported quantity + new imported quantity > supplied quantity, throw error
-              Else, save new record to variant_import_receipts
+              Else, save new record to variant_import_receipts v
              */
             long totalAlreadyImportedQuantity = variantsImportReceiptRepository
                 .totalImportedQuantityOfVariantInOrder(lineItem.getVariantId(), orderId);

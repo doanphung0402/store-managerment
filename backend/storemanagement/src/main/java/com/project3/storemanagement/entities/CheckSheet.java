@@ -2,7 +2,7 @@ package com.project3.storemanagement.entities;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-
+//x
 @Entity
 @Table(name = "check_sheets")
 public class CheckSheet {
